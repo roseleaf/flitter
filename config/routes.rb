@@ -1,6 +1,7 @@
 Flitter::Application.routes.draw do
   match "static_pages/home"
   match "static_pages/help"
+  match "static_pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
