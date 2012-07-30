@@ -1,0 +1,60 @@
+a moment on a server process
+server is a program that waits for clients (browser, app etc) to call it and send it requests, then it responds.
+
+url made into get req 
+sent to server who gets the request and hand it to backend
+which generates response, gives it back to server, then gives it to client
+
+your ip address determines where in the internet you are ...
+
+git grep: find strings in your files
+
+:inline => means right here, not somewhere else
+
+review:
+model contains data
+controller pulls that data, maybe sets variables
+passes it to the view
+view passes to user
+
+and render is implicitly called if not explicit in a method of a class/controller
+
+erb is still very ugly
+ned's greeting demo app greetingscontroller
+
+greetings = ["hello", "hey", "hi"]
+
+def list
+  @greeting = greetings.sample
+end
+
+
+so the only thing that's cool here is the ".sample" method: it selects randomly from an array
+
+using 13% battery on ned's computer as a timer
+up & down methods in migration files are typically completely unnecessary in current version of rails
+-good to know
+
+
+sqlite3 has no good gui
+sqlite3 db/development.sqlite3   <--that's the best they've got so far
+
+schema file has all info on db
+models inheriting from activerecord base is what makes them different than regular classes
+after making greeting model and populating it a little, we change the above method to
+
+def list
+  @greeting = Greeting.all.sample  <-- might not be quite on
+end
+
+this sampling should be in a get_random_greeting method in the model and then called on 
+then he set a view with all the attributes of greeting in a ul
+
+"obviously, anything is possible in the world" -ned
+
+
+do not concern yourselves with my space-age technologies
+"rspec if just wannabe english"-jj
+
+"rspec is like a 3 year old trying to speak english"-akram
+
