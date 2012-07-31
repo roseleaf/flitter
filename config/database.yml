@@ -23,7 +23,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: flitter_production
+  database: flitter_production.postgresql
   pool: 5
   username: postgres
   password: tree
