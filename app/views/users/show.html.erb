@@ -1,7 +1,17 @@
-<% provide(:title, 'Profile') %>
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+  </aside>
+</div>
 
-<p id="notice"><%= notice %></p>
+<%= @user.name %>, <%= @user.email %>
+<br>
 
-
-<%= link_to 'Edit', edit_user_path(@user) %> |
+<!-- <%= link_to 'Edit', edit_user_path(@user) %> | -->
 <%= link_to 'Back', users_path %>

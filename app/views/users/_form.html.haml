@@ -10,22 +10,22 @@
   %br    
   %h2 The Essential Details        
   .field
-    = f.label :username
+    = f.label :name
     %br/
-    = f.text_field :username
+    = f.text_field :name
   .field
     = f.label :email
     %br/
     = f.text_field :email
-  / .field
-  /   = f.label :password
-  /   %br/
-  /   = f.password_field :password
-  / .field
-  /   = f.label :password_confirmation
-  /   %br/
-  /   = f.password_field :password_confirmation
-  / .field
+  .field
+    = f.label :password
+    %br/
+    = f.password_field :password
+  .field
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
+  .field
 
 
 
